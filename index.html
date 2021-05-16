@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navigation">
+                  <div class="toggle"></div>
+                  <ul>
+                      <li>
+                          <a href="https://www.instagram.com/dharm_bharodiya" target="_blank">
+                              <span class="icon"><i class="fa fa-user" aria-hidden="true"></i>
+                              </span>
+                              <span class="title">Dharm Bharodiya</span>
+                          </a>
+                       </li>
+                      <li>
+                          <a href="https://dharm2.github.io/gallery/" target="_blank">
+                              <span class="icon"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                              <span class="title">Gallery</span>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="http://www.liveclock.ml/" target="_blank">
+                              <span class="icon"><i class="fa fa-clock" aria-hidden="true" ></i>
+                              </span>
+                              <span class="title">Clock</span>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="https://dharm2.github.io/glass/" target="_blank">
+                              <span class="icon"><i class="fa fa-window-maximize" aria-hidden="true"></i></span>
+                              <span class="title">Glassmorphism</span>
+                          </a>
+                       </li>
+                  </ul>
+          </div>
+          <div class="glass"></div>
+            <div class="glass-blue"></div>
+
+            <script>
+
+              const navigation = document.querySelector(".toggle");
+
+              document.querySelector(".navigation").ondblclick = function(){
+                this.classList.toggle("active");
+                navigation.classList.toggle("active");
+
+
+              }
+
+            </script>
+
+</body>
+</html>
